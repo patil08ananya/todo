@@ -1,4 +1,14 @@
-main{
-    background-color: aliceblue;
+body{
+    background-color: #f5fdff;
+}
+
+
+#home-btn{
+    background-color: #03045e;
+    color: white;
+}
+
+.nav-link, .fs-4{
+    color:#03045e;
 }
 
