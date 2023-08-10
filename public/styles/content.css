@@ -1,0 +1,13 @@
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    padding-left: 120px;
+    padding-top: 40px;
+    grid-template-columns: 75% 15%;
+}
+
+.submit-btn,.input{
+    border-radius: 5px;
+}
+
