@@ -1,3 +1,20 @@
+body{
+    background-color: #f5fdff;
+}
+
+
+#home-btn{
+    background-color: #03045e;
+    color: white;
+}
+
+.nav-link, .fs-4{
+    color:#03045e;
+}
+
+h1{
+    text-align: center;
+}
 
 .grid-container{
     display: grid;
