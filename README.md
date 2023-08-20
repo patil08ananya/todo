@@ -8,3 +8,4 @@ color pallete:
 #caf0f8
 
 * for image check in public/images folder *
+
