@@ -1,11 +1,14 @@
 <%- include("partials/header.ejs") %>
-
 <h1>
     Plan your day
 </h1>
 
 
+<div class="date"><%= currentDate %> <%=currentMonth %> <%= currentYear %></div>
+
 <form class="container search-bar grid-container">
-    <input class="input" type="text" placeholder="Enter Task">
-    <button class="submit-btn">Add Task</button>
+    <input class="input" type="text" name="taskForToday" placeholder="Enter Task">
+    <button class="submit-btn" style="background-color: #03045e; color: white; border: 0px;">Add Task</button>
 </form>
+
+

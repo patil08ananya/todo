@@ -2,7 +2,6 @@ body{
     background-color: #f5fdff;
 }
 
-
 #home-btn{
     background-color: #03045e;
     color: white;
@@ -12,19 +11,21 @@ body{
     color:#03045e;
 }
 
-h1{
+h1,.date,span{
     text-align: center;
+    font-family: 'Kalam', cursive;
 }
 
 .grid-container{
     display: grid;
     gap: 10px;
     padding-left: 120px;
-    padding-top: 40px;
-    grid-template-columns: 75% 15%;
+    padding: 10px;
+    grid-template-columns: 3fr 0.5fr;
 }
 
 .submit-btn,.input{
     border-radius: 5px;
 }
+
 
