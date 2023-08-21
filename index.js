@@ -10,17 +10,19 @@ const port = 3000;
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+let today = date.getDate();
+let mon = date.getMonth();
+let year = date.getFullYear();
+
 app.get("/", (req, res) => {
-    let today = date.getDate();
-    let mon = date.getMonth();
-    let year = date.getFullYear();
     res.render("index.ejs",{currentDate: today, currentMonth: month[mon], currentYear: year});
 });
 
 app.post("/submit", (req, res) => {
-    const task = req.body["taskForToday"];
-    res.render("index.ejs", { todayTask: task });
+    let newTask = req.body["taskForToday"];
+    res.render("index.ejs",{currentDate: today, currentMonth: month[mon], currentYear: year,task: newTask});
 });
+
 
 app.listen(port, () => {
     console.log(`Server started at ${port}`);

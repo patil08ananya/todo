@@ -6,9 +6,13 @@
 
 <div class="date"><%= currentDate %> <%=currentMonth %> <%= currentYear %></div>
 
-<form class="container search-bar grid-container">
-    <input class="input" type="text" name="taskForToday" placeholder="Enter Task">
+<form class="container search-bar grid-container" action="/submit" method="post">
+    <!--autocomplete="off" is used for switching off the suggestions when the input box is clicked-->
+    <input class="input" type="text" name="taskForToday" placeholder="Enter Task" autocomplete="off">
     <button class="submit-btn" style="background-color: #03045e; color: white; border: 0px;">Add Task</button>
 </form>
 
+<% if(locals.task) { %>
+    <div> <%= task %> </div>
+<% } %>
 
