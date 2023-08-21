@@ -28,4 +28,12 @@ h1,.date,span{
     border-radius: 5px;
 }
 
+.center{
+    margin: auto;
+    width: 50%;
+    
+}
 
+.task{
+    padding: 10px;
+}

@@ -12,7 +12,17 @@
     <button class="submit-btn" style="background-color: #03045e; color: white; border: 0px;">Add Task</button>
 </form>
 
-<% if(locals.task) { %>
-    <div> <%= task %> </div>
+
+<div class="center">
+<% for(i=0;i < newTaskOfDay.length; i++) { %>
+    <div class="list-group container task">
+        <label class="list-group-item d-flex gap-2">
+            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+            <span>
+                <%= newTaskOfDay[i] %>
+            </span>
+        </label>
+    </div>
 <% } %>
+</div>
 
