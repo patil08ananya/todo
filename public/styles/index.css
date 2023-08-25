@@ -1,5 +1,7 @@
 body{
     background-color: #f5fdff;
+    background-image: url("./images/blue.jpg");
+    background-size: cover;
 }
 
 #home-btn{
@@ -36,4 +38,12 @@ h1,.date,span{
 
 .task{
     padding: 10px;
+}
+
+#image{
+    margin-right: 20px;
+}
+
+.head{
+    font-size: 2.5rem;
 }
